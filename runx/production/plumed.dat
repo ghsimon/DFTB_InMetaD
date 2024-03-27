@@ -1,0 +1,8 @@
+phi: TORSION ATOMS=13,9,4,2
+metad: METAD ARG=phi ...
+  PACE=10000 HEIGHT=1.3 BIASFACTOR=16
+  SIGMA=0.05 TEMP=300 ACCELERATION
+  FILE=HILLS GRID_MIN=-pi GRID_MAX=pi
+...
+# Print both collective variables on COLVAR file every 10 steps
+PRINT ARG=phi,metad.bias,metad.acc FILE=COLVAR STRIDE=10
