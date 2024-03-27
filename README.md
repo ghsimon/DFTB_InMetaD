@@ -10,9 +10,9 @@ Starting structures `geo_end.gen`, velocities `velocities.npy` and charges `eq2_
 
 `runx` is a template folder which will be copied for each run. It has two subdirectories. 
 
-In the `random_equilibration`, an unbiased NVT equilibration will be carried out. Here, a random amount of equilibration steps and a small random perturbation of the starting velocities is included. This is done to randomize the starting configuration and velocities in accordance with local thermal equilibrium. The script `make_equilibration_dftb.py` is used to generate DFTB+ input files.
+- `random_equilibration` : an unbiased NVT equilibration will be carried out. Here, a random amount of equilibration steps and a small random perturbation of the starting velocities is included. This is done to randomize the starting configuration and velocities in accordance with local thermal equilibrium. The script `make_equilibration_dftb.py` is used to generate DFTB+ input files.
 
-In the `production` folder, the InMetaD is run using an additional `plumed.dat` input file to implement the metadynamics biasing. Starting velocities are copied from the last step of the equilibration using the `take_velocities.sh` script.  The script `make_production_dftb.py` is used to generate DFTB+ input files.
+- `production` : the InMetaD is run using an additional `plumed.dat` input file to implement the metadynamics biasing. Starting velocities are copied from the last step of the equilibration using the `take_velocities.sh` script.  The script `make_production_dftb.py` is used to generate DFTB+ input files.
 
 ## Running infrequent metadynamics runs
 
