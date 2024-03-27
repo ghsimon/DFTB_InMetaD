@@ -6,7 +6,7 @@ For details see: [Link to the paper](https://doi.org/10.1002/jcc.27332).
 
 ## Setup
 
-Starting structures `geo_end.gen`, velocities `velocities.npy` and charges `eq2_charges.bin` in this folder taken from previous equilibration run in trans state.
+Starting structures `geo_end.gen`, velocities `velocities.npy` and charges `eq2_charges.bin` in this folder are taken from a previous equilibration run in trans state.
 
 `runx` is a template folder which will be copied for each run. It has two subdirectories. 
 
@@ -28,7 +28,7 @@ This creates a `run1` folder in which an unbiased NVT equilibration and subseque
 
 ## Command History
 
-A history of the commands used is given in the `history.txt` file
+A history of the commands used is given in the `history.txt` file.
 
 ## Software 
 
