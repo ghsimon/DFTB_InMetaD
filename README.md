@@ -30,7 +30,7 @@ This creates a `run1` folder in which an unbiased NVT equilibration and subseque
 
 A history of the commands used is given in the `history.txt` file.
 
-## Software 
+## Prerequisite Software 
 
  - DFTB+ plugged with PLUMED
  - Python
