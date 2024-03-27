@@ -1,0 +1,15 @@
+# infrequent metadynamics simulation starting from run.sh script. Starting structures 'geo_end.gen', velocities 'velocities.npy' and charges 'eq2_charges.bin' in this folder taken from previous equilibration run in trans state.
+# run.sh automatically generates a new directory where a new equilibration is run with a random amount of equilibration steps and a small random perturbation of the starting velocities.
+# number of timesteps and metadynamics parameters have to be defined in the runx folder.
+
+# execute 30 runs
+for AT in $(seq 1 30)
+do
+    bash run.sh $AT
+done
+
+# extract the transition times (scaled and unscaled) from the COLVAR files
+python extract_times.py
+
+# calculate the rate (Salvalaglio 2014 paper)
+python calculate_rate.py
